@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Tim kiem mon an">
+    <mxGraphModel dx="1820" dy="1880" grid="1" gridSize="10" page="1" pageWidth="1820" pageHeight="1880">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="THIẾT KẾ MODULE TÌM KIẾM MÓN ĂN&lt;br&gt;JSP + DAO + JDBC — mã nguồn RestMan hiện tại" style="text;html=1;align=left;fontSize=28;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1720" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="home" value="&lt;div style=&quot;text-align:left&quot;&gt;&lt;i&gt;«JSP / boundary»&lt;/i&gt;&lt;br&gt;&lt;b&gt;MainCustomerUI5.jsp&lt;/b&gt;&lt;hr&gt;subSearchDish : Link&lt;/div&gt;" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=15;fontFamily=Consolas;fontSize=20;fillColor=#D7EEF9;strokeColor=#24445D;" vertex="1" parent="1">
+          <mxGeometry x="40" y="135" width="350" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="search" value="&lt;div style=&quot;text-align:left&quot;&gt;&lt;i&gt;«JSP / boundary»&lt;/i&gt;&lt;br&gt;&lt;b&gt;SearchDishUI5.jsp&lt;/b&gt;&lt;hr&gt;inName : TextInput [name=name]&lt;br&gt;inType : Select [name=type]&lt;br&gt;subSearch : Submit [name=search]&lt;br&gt;outDishList : Table&lt;br&gt;listDish : List&amp;lt;Dish&amp;gt;&lt;br&gt;types : List&amp;lt;String&amp;gt;&lt;br&gt;searched : boolean&lt;br&gt;name, type : String (request params)&lt;/div&gt;" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=15;fontFamily=Consolas;fontSize=20;fillColor=#D7EEF9;strokeColor=#24445D;" vertex="1" parent="1">
+          <mxGeometry x="495" y="135" width="580" height="395" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="&lt;div style=&quot;text-align:left&quot;&gt;&lt;i&gt;«JSP / boundary»&lt;/i&gt;&lt;br&gt;&lt;b&gt;DishDetailUI5.jsp&lt;/b&gt;&lt;hr&gt;subBack : Link&lt;br&gt;outName, outType : Text&lt;br&gt;outDescription, outPrice : Text&lt;br&gt;currentSizeName : Text&lt;br&gt;dishSizeId : Select [name=dishSizeId]&lt;br&gt;dishId : long (parsed request param)&lt;br&gt;dish : Dish&lt;br&gt;selectedSize : DishSizePrice&lt;br&gt;sizeError : String&lt;br&gt;name, type : String (request params)&lt;/div&gt;" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=15;fontFamily=Consolas;fontSize=20;fillColor=#D7EEF9;strokeColor=#24445D;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="135" width="600" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="dao" value="&lt;div style=&quot;text-align:left&quot;&gt;&lt;i&gt;«DAO»&lt;/i&gt;&lt;br&gt;&lt;b&gt;DishDAO&lt;/b&gt;&lt;hr&gt;+ searchDishes(name:String, type:String)&lt;br&gt;    : List&amp;lt;Dish&amp;gt;&lt;br&gt;+ getDishbyId(dishId:long) : Optional&amp;lt;Dish&amp;gt;&lt;br&gt;+ getTypes() : List&amp;lt;String&amp;gt;&lt;br&gt;~ {static} readDish(rows:ResultSet,&lt;br&gt;    connection:Connection) : Dish&lt;/div&gt;" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=15;fontFamily=Consolas;fontSize=20;fillColor=#D7EEF9;strokeColor=#24445D;" vertex="1" parent="1">
+          <mxGeometry x="495" y="755" width="670" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="&lt;div style=&quot;text-align:left&quot;&gt;&lt;i&gt;«utility»&lt;/i&gt;&lt;br&gt;&lt;b&gt;Database&lt;/b&gt;&lt;hr&gt;+ {static} open() : Connection&lt;br&gt;+ {static} failure(ex:SQLException)&lt;br&gt;    : DatabaseException&lt;/div&gt;" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=15;fontFamily=Consolas;fontSize=20;fillColor=#E7EDF3;strokeColor=#24445D;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="800" width="490" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="dish" value="&lt;div style=&quot;text-align:left&quot;&gt;&lt;i&gt;«entity»&lt;/i&gt;&lt;br&gt;&lt;b&gt;Dish&lt;/b&gt;&lt;hr&gt;- id : long&lt;br&gt;- name, type : String&lt;br&gt;- description, image : String&lt;br&gt;- price : BigDecimal&lt;br&gt;- dishSizes : List&amp;lt;DishSize&amp;gt;&lt;hr&gt;+ getSizePrices() : List&amp;lt;DishSizePrice&amp;gt;&lt;br&gt;+ getDefaultDishSize() : DishSize&lt;br&gt;+ getMinPrice() : BigDecimal&lt;br&gt;+ getMaxPrice() : BigDecimal&lt;/div&gt;" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=15;fontFamily=Consolas;fontSize=20;fillColor=#E3F1E9;strokeColor=#24445D;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1180" width="580" height="455" as="geometry" />
+        </mxCell>
+        <mxCell id="size" value="&lt;div style=&quot;text-align:left&quot;&gt;&lt;i&gt;«record / entity»&lt;/i&gt;&lt;br&gt;&lt;b&gt;DishSize&lt;/b&gt;&lt;hr&gt;id, sizeId : long&lt;br&gt;name : String&lt;br&gt;pricePercentage : BigDecimal&lt;hr&gt;+ priceFor(basePrice:BigDecimal)&lt;br&gt;    : BigDecimal&lt;/div&gt;" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=15;fontFamily=Consolas;fontSize=20;fillColor=#E3F1E9;strokeColor=#24445D;" vertex="1" parent="1">
+          <mxGeometry x="735" y="1180" width="520" height="335" as="geometry" />
+        </mxCell>
+        <mxCell id="price" value="&lt;div style=&quot;text-align:left&quot;&gt;&lt;i&gt;«record / display data»&lt;/i&gt;&lt;br&gt;&lt;b&gt;DishSizePrice&lt;/b&gt;&lt;hr&gt;id : long&lt;br&gt;name : String&lt;br&gt;pricePercentage : BigDecimal&lt;br&gt;price : BigDecimal&lt;/div&gt;" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=15;fontFamily=Consolas;fontSize=20;fillColor=#E3F1E9;strokeColor=#24445D;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="1180" width="410" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" value="Mở / GET" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;" edge="1" source="home" target="search" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="GET chi tiết" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;" edge="1" source="search" target="detail" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="Quay lại + giữ name, type" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;" edge="1" source="detail" target="search" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="620" />
+              <mxPoint x="1130" y="590" />
+              <mxPoint x="785" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="searchDishes / getTypes" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;dashed=1;" edge="1" source="search" target="dao" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="getDishbyId" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;dashed=1;" edge="1" source="detail" target="dao" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1480" y="712" />
+              <mxPoint x="1050" y="712" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="open()" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;dashed=1;" edge="1" source="dao" target="db" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="Tạo / trả Dish" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;dashed=1;" edge="1" source="dao" target="dish" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="1110" />
+              <mxPoint x="330" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="readDish: tạo size" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;dashed=1;" edge="1" source="dao" target="size" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="995" y="1035" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" value="dishSizes" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;" edge="1" source="dish" target="size" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="getSizePrices(): tạo dữ liệu hiển thị" style="html=1;endArrow=open;endFill=0;fontSize=17;strokeColor=#455C70;dashed=1;" edge="1" source="dish" target="price" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="1690" />
+              <mxPoint x="1575" y="1690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="notes" value="Nét liền: điều hướng / tham chiếu. Nét đứt: gọi / tạo dữ liệu.&lt;br&gt;JSP: các dòng biểu diễn element và dữ liệu render, không phải field Java.&lt;br&gt;Phạm vi nhánh món ăn; nhánh combo của trang tìm kiếm được lược khỏi sơ đồ này." style="text;html=1;align=left;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1745" width="1740" height="115" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

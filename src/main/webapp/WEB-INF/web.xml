@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="6.0">
+    <display-name>RestMan</display-name>
+    <servlet><servlet-name>comboEditor</servlet-name><jsp-file>/AddComboUI5.jsp</jsp-file><multipart-config><max-file-size>5242880</max-file-size><max-request-size>7340032</max-request-size><file-size-threshold>0</file-size-threshold></multipart-config></servlet>
+    <servlet><servlet-name>comboSave</servlet-name><jsp-file>/doSaveCombo5.jsp</jsp-file><multipart-config><max-file-size>5242880</max-file-size><max-request-size>7340032</max-request-size><file-size-threshold>0</file-size-threshold></multipart-config></servlet>
+    <!-- Existing combo records can still contain the previous image URL. -->
+    <servlet><servlet-name>storedComboImage</servlet-name><jsp-file>/ComboImage5.jsp</jsp-file></servlet>
+    <servlet-mapping><servlet-name>storedComboImage</servlet-name><url-pattern>/ComboImage.jsp</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>comboEditor</servlet-name><url-pattern>/AddComboUI5.jsp</url-pattern></servlet-mapping>
+    <servlet-mapping><servlet-name>comboSave</servlet-name><url-pattern>/doSaveCombo5.jsp</url-pattern></servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+        <cookie-config><http-only>true</http-only></cookie-config>
+    </session-config>
+    <welcome-file-list><welcome-file>index5.jsp</welcome-file></welcome-file-list>
+    <request-character-encoding>UTF-8</request-character-encoding>
+    <error-page>
+        <exception-type>vn.restman.dao.DatabaseException</exception-type>
+        <location>/WEB-INF/views/shared/database-error5.jsp</location>
+    </error-page>
+    <response-character-encoding>UTF-8</response-character-encoding>
+</web-app>

@@ -1,0 +1,8 @@
+<%@ page pageEncoding="UTF-8" %>
+<footer class="site-footer">
+    <div class="container">
+        RestMan - Quản lý nhà hàng
+    </div>
+</footer>
+</body>
+</html>

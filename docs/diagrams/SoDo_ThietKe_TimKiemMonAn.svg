@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1820" height="1880" viewBox="0 0 1820 1880"><rect width="100%" height="100%" fill="white"/>
+<text x="40" y="60" font-family="Segoe UI, Arial" font-size="35" fill="#263B50" font-weight="700">THIẾT KẾ MODULE TÌM KIẾM MÓN ĂN</text>
+<text x="40" y="96" font-family="Segoe UI, Arial" font-size="20" fill="#263B50">Đối chiếu mã nguồn RestMan • JSP + DAO + JDBC • 17/11/2026</text>
+<polyline points="390,215 495,215" fill="none" stroke="#455C70" stroke-width="2"/>
+<polyline points="483.2941876694152,220.654551943446 495,215 483.2941876694152,209.345448056554" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="395" y="198" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">Mở / GET</text>
+<polyline points="1075,285 1180,285" fill="none" stroke="#455C70" stroke-width="2"/>
+<polyline points="1168.2941876694151,290.654551943446 1180,285 1168.2941876694151,279.345448056554" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="1076" y="265" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">GET chi tiết</text>
+<polyline points="1180,620 1130,620 1130,590 785,590 785,530" fill="none" stroke="#455C70" stroke-width="2"/>
+<polyline points="790.654551943446,541.7058123305848 785,530 779.345448056554,541.7058123305848" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="815" y="568" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">Quay lại + giữ name, type</text>
+<polyline points="650,530 650,755" fill="none" stroke="#455C70" stroke-width="2" stroke-dasharray="7 6"/>
+<polyline points="644.345448056554,743.2941876694152 650,755 655.654551943446,743.2941876694152" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="352" y="673" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">searchDishes / getTypes</text>
+<polyline points="1480,675 1480,712 1050,712 1050,755" fill="none" stroke="#455C70" stroke-width="2" stroke-dasharray="7 6"/>
+<polyline points="1044.345448056554,743.2941876694152 1050,755 1055.654551943446,743.2941876694152" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="1190" y="693" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">getDishbyId</text>
+<polyline points="1165,900 1290,900" fill="none" stroke="#455C70" stroke-width="2" stroke-dasharray="7 6"/>
+<polyline points="1278.2941876694151,905.654551943446 1290,900 1278.2941876694151,894.345448056554" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="1183" y="881" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">open()</text>
+<polyline points="550,1035 550,1110 330,1110 330,1180" fill="none" stroke="#455C70" stroke-width="2" stroke-dasharray="7 6"/>
+<polyline points="324.345448056554,1168.2941876694151 330,1180 335.654551943446,1168.2941876694151" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="110" y="1092" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">Tạo / trả Dish</text>
+<polyline points="900,1035 995,1035 995,1180" fill="none" stroke="#455C70" stroke-width="2" stroke-dasharray="7 6"/>
+<polyline points="989.345448056554,1168.2941876694151 995,1180 1000.654551943446,1168.2941876694151" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="1010" y="1098" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">readDish: tạo size</text>
+<polyline points="620,1340 735,1340" fill="none" stroke="#455C70" stroke-width="2"/>
+<polyline points="723.2941876694152,1345.654551943446 735,1340 723.2941876694152,1334.345448056554" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="626" y="1318" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">dishSizes</text>
+<polyline points="330,1635 330,1690 1575,1690 1575,1465" fill="none" stroke="#455C70" stroke-width="2" stroke-dasharray="7 6"/>
+<polyline points="1580.654551943446,1476.7058123305849 1575,1465 1569.345448056554,1476.7058123305849" fill="none" stroke="#455C70" stroke-width="2"/>
+<text x="700" y="1670" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">getSizePrices(): tạo dữ liệu hiển thị</text>
+<rect x="40" y="135" width="350" height="155" fill="#D7EEF9" stroke="#24445D" stroke-width="2"/>
+<text x="58" y="162" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">«JSP / boundary»</text>
+<text x="58" y="194" font-family="Segoe UI, Arial" font-size="24" fill="#263B50" font-weight="700">MainCustomerUI5.jsp</text>
+<path d="M40,212h350" stroke="#24445D"/>
+<text x="57" y="246" font-family="Consolas" font-size="20" fill="#263B50">subSearchDish : Link</text>
+<rect x="495" y="135" width="580" height="395" fill="#D7EEF9" stroke="#24445D" stroke-width="2"/>
+<text x="513" y="162" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">«JSP / boundary»</text>
+<text x="513" y="194" font-family="Segoe UI, Arial" font-size="24" fill="#263B50" font-weight="700">SearchDishUI5.jsp</text>
+<path d="M495,212h580" stroke="#24445D"/>
+<text x="512" y="246" font-family="Consolas" font-size="20" fill="#263B50">inName : TextInput [name=name]</text>
+<text x="512" y="277" font-family="Consolas" font-size="20" fill="#263B50">inType : Select [name=type]</text>
+<text x="512" y="308" font-family="Consolas" font-size="20" fill="#263B50">subSearch : Submit [name=search]</text>
+<text x="512" y="339" font-family="Consolas" font-size="20" fill="#263B50">outDishList : Table</text>
+<text x="512" y="370" font-family="Consolas" font-size="20" fill="#263B50">listDish : List&lt;Dish&gt;</text>
+<text x="512" y="401" font-family="Consolas" font-size="20" fill="#263B50">types : List&lt;String&gt;</text>
+<text x="512" y="432" font-family="Consolas" font-size="20" fill="#263B50">searched : boolean</text>
+<text x="512" y="463" font-family="Consolas" font-size="20" fill="#263B50">name, type : String (request params)</text>
+<rect x="1180" y="135" width="600" height="540" fill="#D7EEF9" stroke="#24445D" stroke-width="2"/>
+<text x="1198" y="162" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">«JSP / boundary»</text>
+<text x="1198" y="194" font-family="Segoe UI, Arial" font-size="24" fill="#263B50" font-weight="700">DishDetailUI5.jsp</text>
+<path d="M1180,212h600" stroke="#24445D"/>
+<text x="1197" y="246" font-family="Consolas" font-size="20" fill="#263B50">subBack : Link</text>
+<text x="1197" y="277" font-family="Consolas" font-size="20" fill="#263B50">outName, outType : Text</text>
+<text x="1197" y="308" font-family="Consolas" font-size="20" fill="#263B50">outDescription, outPrice : Text</text>
+<text x="1197" y="339" font-family="Consolas" font-size="20" fill="#263B50">currentSizeName : Text</text>
+<text x="1197" y="370" font-family="Consolas" font-size="20" fill="#263B50">dishSizeId : Select [name=dishSizeId]</text>
+<text x="1197" y="401" font-family="Consolas" font-size="20" fill="#263B50">dishId : long (parsed request param)</text>
+<text x="1197" y="432" font-family="Consolas" font-size="20" fill="#263B50">dish : Dish</text>
+<text x="1197" y="463" font-family="Consolas" font-size="20" fill="#263B50">selectedSize : DishSizePrice</text>
+<text x="1197" y="494" font-family="Consolas" font-size="20" fill="#263B50">sizeError : String</text>
+<text x="1197" y="525" font-family="Consolas" font-size="20" fill="#263B50">name, type : String (request params)</text>
+<rect x="495" y="755" width="670" height="280" fill="#D7EEF9" stroke="#24445D" stroke-width="2"/>
+<text x="513" y="782" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">«DAO»</text>
+<text x="513" y="814" font-family="Segoe UI, Arial" font-size="24" fill="#263B50" font-weight="700">DishDAO</text>
+<path d="M495,832h670" stroke="#24445D"/>
+<text x="512" y="866" font-family="Consolas" font-size="20" fill="#263B50">+ searchDishes(name:String, type:String)</text>
+<text x="512" y="897" font-family="Consolas" font-size="20" fill="#263B50">    : List&lt;Dish&gt;</text>
+<text x="512" y="928" font-family="Consolas" font-size="20" fill="#263B50">+ getDishbyId(dishId:long) : Optional&lt;Dish&gt;</text>
+<text x="512" y="959" font-family="Consolas" font-size="20" fill="#263B50">+ getTypes() : List&lt;String&gt;</text>
+<text x="512" y="990" font-family="Consolas" font-size="20" fill="#263B50">~ {static} readDish(rows:ResultSet,</text>
+<text x="512" y="1021" font-family="Consolas" font-size="20" fill="#263B50">    connection:Connection) : Dish</text>
+<rect x="1290" y="800" width="490" height="195" fill="#E7EDF3" stroke="#24445D" stroke-width="2"/>
+<text x="1308" y="827" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">«utility»</text>
+<text x="1308" y="859" font-family="Segoe UI, Arial" font-size="24" fill="#263B50" font-weight="700">Database</text>
+<path d="M1290,877h490" stroke="#24445D"/>
+<text x="1307" y="911" font-family="Consolas" font-size="20" fill="#263B50">+ {static} open() : Connection</text>
+<text x="1307" y="942" font-family="Consolas" font-size="20" fill="#263B50">+ {static} failure(ex:SQLException)</text>
+<text x="1307" y="973" font-family="Consolas" font-size="20" fill="#263B50">    : DatabaseException</text>
+<rect x="40" y="1180" width="580" height="455" fill="#E3F1E9" stroke="#24445D" stroke-width="2"/>
+<text x="58" y="1207" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">«entity»</text>
+<text x="58" y="1239" font-family="Segoe UI, Arial" font-size="24" fill="#263B50" font-weight="700">Dish</text>
+<path d="M40,1257h580" stroke="#24445D"/>
+<text x="57" y="1291" font-family="Consolas" font-size="20" fill="#263B50">- id : long</text>
+<text x="57" y="1322" font-family="Consolas" font-size="20" fill="#263B50">- name, type : String</text>
+<text x="57" y="1353" font-family="Consolas" font-size="20" fill="#263B50">- description, image : String</text>
+<text x="57" y="1384" font-family="Consolas" font-size="20" fill="#263B50">- price : BigDecimal</text>
+<text x="57" y="1415" font-family="Consolas" font-size="20" fill="#263B50">- dishSizes : List&lt;DishSize&gt;</text>
+<path d="M40,1429h580" stroke="#24445D"/>
+<text x="57" y="1464" font-family="Consolas" font-size="20" fill="#263B50">+ getSizePrices() : List&lt;DishSizePrice&gt;</text>
+<text x="57" y="1495" font-family="Consolas" font-size="20" fill="#263B50">+ getDefaultDishSize() : DishSize</text>
+<text x="57" y="1526" font-family="Consolas" font-size="20" fill="#263B50">+ getMinPrice() : BigDecimal</text>
+<text x="57" y="1557" font-family="Consolas" font-size="20" fill="#263B50">+ getMaxPrice() : BigDecimal</text>
+<rect x="735" y="1180" width="520" height="335" fill="#E3F1E9" stroke="#24445D" stroke-width="2"/>
+<text x="753" y="1207" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">«record / entity»</text>
+<text x="753" y="1239" font-family="Segoe UI, Arial" font-size="24" fill="#263B50" font-weight="700">DishSize</text>
+<path d="M735,1257h520" stroke="#24445D"/>
+<text x="752" y="1291" font-family="Consolas" font-size="20" fill="#263B50">id, sizeId : long</text>
+<text x="752" y="1322" font-family="Consolas" font-size="20" fill="#263B50">name : String</text>
+<text x="752" y="1353" font-family="Consolas" font-size="20" fill="#263B50">pricePercentage : BigDecimal</text>
+<path d="M735,1367h520" stroke="#24445D"/>
+<text x="752" y="1402" font-family="Consolas" font-size="20" fill="#263B50">+ priceFor(basePrice:BigDecimal)</text>
+<text x="752" y="1433" font-family="Consolas" font-size="20" fill="#263B50">    : BigDecimal</text>
+<rect x="1370" y="1180" width="410" height="285" fill="#E3F1E9" stroke="#24445D" stroke-width="2"/>
+<text x="1388" y="1207" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">«record / display data»</text>
+<text x="1388" y="1239" font-family="Segoe UI, Arial" font-size="24" fill="#263B50" font-weight="700">DishSizePrice</text>
+<path d="M1370,1257h410" stroke="#24445D"/>
+<text x="1387" y="1291" font-family="Consolas" font-size="20" fill="#263B50">id : long</text>
+<text x="1387" y="1322" font-family="Consolas" font-size="20" fill="#263B50">name : String</text>
+<text x="1387" y="1353" font-family="Consolas" font-size="20" fill="#263B50">pricePercentage : BigDecimal</text>
+<text x="1387" y="1384" font-family="Consolas" font-size="20" fill="#263B50">price : BigDecimal</text>
+<text x="640" y="1374" font-family="Segoe UI, Arial" font-size="18" fill="#263B50">0..*</text>
+<text x="40" y="1765" font-family="Segoe UI, Arial" font-size="20" fill="#263B50">Nét liền: điều hướng / tham chiếu dữ liệu. Nét đứt: gọi hoặc tạo dữ liệu; không phải kế thừa.</text>
+<text x="40" y="1801" font-family="Segoe UI, Arial" font-size="20" fill="#263B50">Thuộc tính trong hộp JSP biểu diễn element, tham số hoặc dữ liệu render; không phải field Java của JSP.</text>
+<text x="40" y="1837" font-family="Segoe UI, Arial" font-size="20" fill="#263B50">Phạm vi: nhánh món ăn. SearchDishUI5.jsp còn tìm combo; phần ComboDAO/ComboDetailUI5.jsp không vẽ ở đây.</text>
+</svg>
